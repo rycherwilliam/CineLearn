@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities
+﻿
+namespace Domain.Entities.Media
 {
-    internal class Season
+    public class Season
     {
+        private Guid Id {  get; set; } = Guid.NewGuid();
+        private Guid SeriesId { get; set; }
+        private string Title { get; set; }
+        private int SeasonNumber { get; set; }
     }
 }

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Domain.Entities.SubscriptionPlans
 {
-    internal class PremiumPlan
+    public class PremiumPlan : SubscriptionPlan
     {
+        public PremiumPlan(): base(Enums.SubscriptionPlanType.Premium, 4, Enums.Resolution.UHD4K, 49.99m, true) { }
+        
     }
 }
